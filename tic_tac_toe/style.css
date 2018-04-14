@@ -1,0 +1,43 @@
+body{
+    background-color: gold;
+}
+
+#container{
+    background-color: plum;
+    width:500px;
+    height:500px;
+    margin:50px auto;
+}
+
+.row{
+    background-color: deeppink;
+    height:33.33%;
+    display: flex;
+
+    /* flex-direction: row; */
+    /* align-items: flex-start; */
+    justify-content: space-evenly;
+}
+
+/* #row02{
+    background-color: greenyellow;
+    height:33.33%
+}
+
+#row03{
+    background-color:royalblue;
+} */
+
+.box{
+    flex-grow: 1;
+    height:100%;
+    background-color: magenta;
+}
+
+.border01{
+    border-right:2px solid black;
+}
+
+.borderBottom{
+    border-top: 2px solid black;
+}
