@@ -1,0 +1,23 @@
+#box-container{
+    display:flex;
+    /* justify-content: space-between; */
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.box{
+    width: 33.333333333%;
+    height: calc(100vw*.333333);
+    min-width: 120px;
+    /* background-color: magenta; */
+    /* margin:5px; */
+    
+
+}
+
+.photo{
+    background-color: goldenrod;
+    width:90%;
+    height:90%;
+    margin:5%;
+}
