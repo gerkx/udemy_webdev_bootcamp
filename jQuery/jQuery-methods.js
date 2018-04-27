@@ -7,3 +7,5 @@ $("img:first-of-type").attr("src", "https://c3.staticflickr.com/3/2418/224346321
 $("img").last().attr("src", "https://c3.staticflickr.com/3/2418/2243463214_f32ab004af_b.jpg");
 
 $("input").val("Patrick Gerke");
+
+$("select").val();
