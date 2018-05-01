@@ -1,0 +1,12 @@
+
+
+#container{
+    background-color: mediumseagreen;
+    width: 400px;
+    margin: 0 auto;
+}
+
+.completed{
+    opacity:0.5;
+    text-decoration: line-through;
+}
