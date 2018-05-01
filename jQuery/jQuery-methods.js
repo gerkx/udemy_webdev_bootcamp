@@ -19,10 +19,28 @@ $("img").last().attr("src", "https://c3.staticflickr.com/3/2418/2243463214_f32ab
 
 // $("li").first().toggleClass("done");
 
-$("li").click(function(){
-    $(this).toggleClass("done");
+// $("li").click(function(){
+//     $(this).toggleClass("done");
+// });
+
+// $("input").keypress(function(event){
+//     if(event.which === 13) {
+//         alert("you hit enter");    
+//     }
+// });
+
+$(".rainbow").on("click", function(){
+    $(this).toggleClass("right");
 });
 
-$("h1").keypress(function(){
-    $(this).toggleClass("wrong");
+$("input").on("keypress", function(){
+    console.log("key pressed")
 });
+
+$("li").on("mouseenter", function(){
+   $(this).addClass("wrong");
+});
+
+$("li").on("mouseleave", function(){
+    $(this).removeClass("wrong");
+ });
