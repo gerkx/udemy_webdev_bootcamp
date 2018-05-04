@@ -1,12 +1,109 @@
+html{
+    height:100%;
+}
 
+body{
+    height: 100%;
+    font-family: 'Titan One', cursive;
+    background: no-repeat center/105%   
+        url('../svg/SVG_Code.svg'),
+        linear-gradient(-45deg, #e66465 5%, #15ff99 95%);
+    margin: 0;
+    
+}
 
-#container{
-    background-color: mediumseagreen;
-    width: 400px;
+h1{
+    text-align: center;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding-left: 5%;
+    padding-top: 5px;
+    text-align: left;
+    font-size: 2em;
+    line-height: 1.5em;
+    color: rgba(255, 255, 255, .75);
+    letter-spacing:.05em; 
+}
+
+li{
+    width:95%;
+    border-radius:7px;
+}
+
+li:hover{
+    background: #e66465; 
+    color: white;
+}
+
+input{
+    font-family: 'Titan One', cursive;
+    font-size: 3em;
+    background-color: rgb(255, 255, 255, 0.15);;
+    color: #e66465;
     margin: 0 auto;
+    width: 90%;
+    margin: 0 0 0 5%;
+    box-sizing: border-box;
+    padding-left: 2%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 2px solid rgb(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+input:focus{
+    background: rgba(255, 255, 255, .5);
+    outline: none;
+    
+}
+
+.container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+
+.list{
+    width:50%;
+    border: 2px solid rgb(255, 255, 255, 0.4);
+    border-radius: 7px;
+
+}
+
+.items{
+    padding-bottom: 10px;
+    padding-top: 15px;
+
 }
 
 .completed{
     opacity:0.5;
     text-decoration: line-through;
+}
+
+.trash{
+    /* background: #15ff99; */
+    /* color: #e66465; */
+    color: white;
+    /* text-align: center; */
+    display: inline-block;
+    width: 0;
+    /* margin-right: -24px; */
+    height: 48px;
+    transition: 0.25s ease-in-out;
+    padding-left: 7px;
+    opacity: 0;
+}
+
+li:hover .trash{
+    width: 30px;
+    opacity:1.0;
+
 }
