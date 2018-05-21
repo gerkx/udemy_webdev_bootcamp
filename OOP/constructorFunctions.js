@@ -33,7 +33,15 @@ function Car(make, model, year){
     this.numWheels = 4;
 }
 
+// effectively subclassing
+// by calling car we transfer the this from car to the new constructor's this, i think..
 function Moto(make, model, year){
     Car.call(this, make, model, year)
+    this.numWheels = 2;
+}
+
+// using apply lets us use args, like python
+function Ciclo(make, model, year){
+    Car.apply(this, arguments)
     this.numWheels = 2;
 }
